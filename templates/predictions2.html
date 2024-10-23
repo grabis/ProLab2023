@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List of predictions</title>
+</head>
+<body>
+<h1>Predictions</h1>
+<table border="1">
+    {% for pre in predictions %}
+    <TR>
+        <TD class="c1">{{pre.id}}</TD>
+        <TD class="c4">{{pre.average_demand}}</TD>
+        <TD class="c5">{{pre.optimal_qty}}</TD>
+    </TR>{% endfor %}
+</table>
+</body>
+</html>
